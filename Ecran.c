@@ -171,9 +171,9 @@ void Regle_Couleur(BYTE P_Attribut)
    Attribut_Actuel=P_Attribut;
 }
 
-/*BYTE Donne_Couleur(BYTE P_Attribut) {
+BYTE Donne_Couleur(BYTE P_Attribut) {
 	return Attribut_Actuel;
-}*/
+}
 
 
 //--------------------------------------------------------------------------------------------------

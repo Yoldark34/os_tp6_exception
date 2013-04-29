@@ -62,7 +62,26 @@ void OS_Main() {
 		asm(".att_syntax noprefix \n");
 	}
 
-	while (1);
+	BYTE prevColor = Donne_Couleur();
+	Regle_Couleur(prevColor);
+
+	while (1) {
+
+		int i = 0;
+		long boucle = 5000000L;
+
+		Affiche_Alien_1(VERT);
+		for (i = 0; i < boucle; i++) {
+			asm("NOP");
+		}
+
+
+		Affiche_Alien_2(VERT);
+		for (i = 0; i < boucle / 2; i++) {
+			asm("NOP");
+		}
+
+	}
 }
 
 
